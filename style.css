@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #D96F32;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #D96F32;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: #D96F32;
+    border-bottom: 3px solid #D96F32;
+}
+
+@media(max-width:995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #FCF8DD;
+        border-bottom: 3px solid #FCF8DD;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #ffffff;
+        border-top: 0.1rem solid rgb(255, 255, 255);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #ff6b08;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: #D96F32;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 2rem;
+}
+
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #f08a2c;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
+    border: 0.2rem solid #000000;
+    font-size: 10rem;
+    border-radius: 50%;
+    margin: 10rem 5rem 5rem 0;
+    transition: 0.3s ease;
+    color: #eca828;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #f1a532;
+    box-shadow: 0 0 25px #f3b137;
+}
+
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+.tentang-saya h2 {
+    font-size: 32px;
+    color: #C75D2C;
+    margin-bottom: 40px;
+    align-content: center;
+}
+
+.tentang-saya h3 {
+    color: #F3E9DC;
+    font-size: 5rem;
+}
+
+.tentang-saya p {
+    color: wheat;
+    font-size: medium;
+}
+
+.card1 {
+    background-color: #C75D2C;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #C75D2C;
+    transition: 0.3s;
+}
+
+.card1:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #C75D2C;
+}
+
+.card1 h3 {
+    color: #F3E9DC;
+    margin-bottom: 5px;
+}
+
+.card1 p {
+    color: #F3E9DC;
+    font-size: 14px;
+}
+
+.card-grid p{
+    color: #000000;
+}
+
+.card-grid h3{
+    color: #C75D2C;
+}
+
+.pendidikan h2 {
+    font-size: 32px;
+    color: #C75D2C;
+    margin-bottom: 40px;
+    align-content: center;
+}
+
+.card {
+    background-color: #C75D2C;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #C75D2C;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #C75D2C;
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.card p {
+    color: #f58114;
+    font-size: 15px;
+}
+
+.skill h2 {
+    font-size: 32px;
+    color: #C75D2C;
+    margin-bottom: 40px;
+    align-content: center;
+}
+
+.proyek h2 {
+    font-size: 32px;
+    color: #C75D2C;
+    margin-bottom: 40px;
+    align-content: center;
+}
+.proyek h3 {
+    font-size: 4rem;
+    color: #C75D2C;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.proyek h4 {
+    font-size: 4rem;
+    color: #C75D2C;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.proyek p {
+    font-size: 2rem;
+}
+
+.experience h2 {
+    font-size: 32px;
+    color: #C75D2C;
+    margin-bottom: 40px;
+    align-content: center;
+}
+
+.card10 {
+    background-color: #050505;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #C75D2C;
+    transition: 0.3s;
+}
+
+.kontak p{
+    color: #F3E9DC;
+}
+
+.card10:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #C75D2C;
+}
+
+.card10 h3 {
+    color: #C75D2C;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.card10 p {
+    color: #aaa;
+    font-size: 15px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F3E9DC;
+    border-top: 1px solid #F3E9DC;
+    font-size: 14px;
+    color: #C75D2C;
+}
